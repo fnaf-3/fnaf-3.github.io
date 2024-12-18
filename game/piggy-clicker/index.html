@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piggy Clicker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="options.css">
+    <link rel="stylesheet" href="e.css">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <script type="text/javascript">
+        window["GD_OPTIONS"] = {
+            "debug": false, // Enable debugging console. This will set a value in local storage as well, remove this value if you don't want debugging at all. You can also call it by running gdsdk.openConsole() within your browser console.
+            "gameId": "5a9a9c00047e4444a57895a7cc1a9942", // Your gameId which is unique for each one of your games; can be found at your Gamedistribution.com account.
+            "onEvent": function(event) {
+                switch (event.name) {
+                    case "SDK_GAME_START":
+                        document.querySelector("#status").innerHTML = "GAME STARTED";
+                        break;
+                        case "SDK_GAME_PAUSE":
+                        document.querySelector("#status").innerHTML = "GAME PAUSED";
+                        break;
+                        case "SDK_READY":
+                        document.querySelector("#status").innerHTML = "SDK LOADED";
+                        break;
+                    case "SDK_ERROR":
+                        document.querySelector("#status").innerHTML = "SDK ERROR";
+                        break;
+                    case "SDK_GDPR_TRACKING":
+                        document.querySelector("#status").innerHTML = "GDPR TRACKING";
+                        break;
+                    case "SDK_GDPR_TARGETING":
+                        document.querySelector("#status").innerHTML = "GDPR TARGETING";
+                        break;
+                    case "SDK_GDPR_THIRD_PARTY":
+                        document.querySelector("#status").innerHTML = "GDPR THIRD PARTY";
+                        break;
+                }
+            },
+        };
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = '/main.min.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'gamedistribution-jssdk'));
+
+    </script>
+    <script src="app.js"></script>
+    <audio id="click-sound" src="sounds/click.wav"></audio>
+    <audio id="buzz-sound" src="sounds/buzz.flac"></audio>
+    <audio id="buy-sound" src="sounds/buy.wav"></audio>
+    <audio id="lofi-sound" src="sounds/lofi.mp3"></audio>
+    <div class="container">
+        <div class="bar">
+            <div id="coinCount">
+                <img src="img/bank.svg" alt="Bank">
+                <span id="coinValue">0</span>
+            </div>
+            <div class="button-group">
+                <button id="upgradeButton" class="">
+                    <div class="left">
+                        <img src="img/cursor.svg" alt="Cursor">
+                        <span>+1</span>
+                    </div>
+                    <div class="right">
+                        <img src="img/penny.svg" alt="Penny">
+                        <span>20</span>
+                    </div>
+                </button>
+                <button id="autoClickerButton" class="">
+                    <div class="left">
+                        <img src="img/train.png" alt="Train">
+                        <span>+1</span>
+                    </div>
+                    <div class="right">
+                        <img src="img/penny.svg" alt="Penny">
+                        <span>50</span>
+                    </div>
+                </button>
+                <button id="ballButton" class="">
+                    <div class="left">
+                        <img src="img/ball.png" alt="Ball">
+                        <span>+2</span>
+                    </div>
+                    <div class="right">
+                        <img src="img/penny.svg" alt="Penny">
+                        <span>100</span>
+                    </div>
+                </button>
+                <button id="shoeButton" class="">
+                    <div class="left">
+                        <img src="img/shoe.png" alt="Shoe">
+                        <span>+3</span>
+                    </div>
+                    <div class="right">
+                        <img src="img/penny.svg" alt="Penny">
+                        <span>150</span>
+                    </div>
+                </button>
+                <button id="koalaButton" class="">
+                    <div class="left">
+                        <img src="img/koala.png" alt="Koala">
+                        <span>+5</span>
+                    </div>
+                    <div class="right">
+                        <img src="img/penny.svg" alt="Penny">
+                        <span>375</span>
+                    </div>
+                </button>
+                <button id="consoleButton" class="">
+                    <div class="left">
+                        <img src="img/console.png" alt="Console">
+                        <span>+7</span>
+                    </div>
+                    <div class="right">
+                        <img src="img/penny.svg" alt="Penny">
+                        <span>1000</span>
+                    </div>
+                </button>
+                <button id="secondCursorButton" class="hidden">
+                    <div class="left">
+                        <img src="img/cursor.svg" alt="Cursor">
+                        <span>+1</span>
+                    </div>
+                    <div class="right">
+                        <img src="img/penny.svg" alt="Penny">
+                        <span>225</span>
+                    </div>
+                </button>
+                <button id="rugButton" class="hidden">
+                    <div class="left">
+                        <img src="img/rug.png" alt="Rug">
+                        <span>+11</span>
+                    </div>
+                    <div class="right">
+                        <img src="img/penny.svg" alt="Penny">
+                        <span>1500</span>
+                    </div>
+                </button>
+                <button id="cursorButton350" class="hidden">
+                    <div class="left">
+                        <img src="img/cursor.svg" alt="Cursor">
+                        <span>+5</span>
+                    </div>
+                    <div class="right">
+                        <img src="img/penny.svg" alt="Penny">
+                        <span>350</span>
+                    </div>
+                </button>
+                <button id="plantButton" class="hidden">
+                    <div class="left">
+                        <img src="img/plant.png" alt="Plant">
+                        <span>+15</span>
+                    </div>
+                    <div class="right">
+                        <img src="img/penny.svg" alt="Penny">
+                        <span>1890</span>
+                    </div>
+                </button>
+                <button id="snailButton" class="hidden">
+                    <div class="left">
+                        <img src="img/snail.png" alt="Snail">
+                        <span>+20</span>
+                    </div>
+                    <div class="right">
+                        <img src="img/penny.svg" alt="Penny">
+                        <span>2250</span>
+                    </div>
+                </button>
+                <button id="cabinetButton" class="hidden">
+                    <div class="left">
+                        <img src="img/cabinet.svg" alt="Cabinet">
+                        <span>+30</span>
+                    </div>
+                    <div class="right">
+                        <img src="img/penny.svg" alt="Penny">
+                        <span>3000</span>
+                    </div>
+                </button>
+                <button id="glueButton" class="hidden">
+                    <div class="left">
+                        <img src="img/glue.png" alt="Glue">
+                        <span>+40</span>
+                    </div>
+                    <div class="right">
+                        <img src="img/penny.svg" alt="Penny">
+                        <span>4222</span>
+                    </div>
+                </button>
+                <button id="fitButton" class="hidden">
+                    <div class="left">
+                        <img src="img/fit.png" alt="Fit">
+                        <span>+55</span>
+                    </div>
+                    <div class="right">
+                        <img src="img/penny.svg" alt="Penny">
+                        <span>5556</span>
+                    </div>
+                </button>
+                <button id="cursorButton550" class="hidden">
+                    <div class="left">
+                        <img src="img/cursor.svg" alt="Cursor">
+                        <span>+1</span>
+                    </div>
+                    <div class="right">
+                        <img src="img/penny.svg" alt="Penny">
+                        <span>750</span>
+                    </div>
+                </button>
+                <button id="parrotButton" class="hidden">
+                    <div class="left">
+                        <img src="img/parrot.png" alt="Parrot">
+                        <span>+75</span>
+                    </div>
+                    <div class="right">
+                        <img src="img/penny.svg" alt="Penny">
+                        <span>8741</span>
+                    </div>
+                </button>
+                <button id="cursorButton800" class="hidden">
+                    <div class="left">
+                        <img src="img/cursor.svg" alt="Parrot">
+                        <span>+4</span>
+                    </div>
+                    <div class="right">
+                        <img src="img/penny.svg" alt="Penny">
+                        <span>1000</span>
+                    </div>
+                </button>
+                <button id="brushButton" class="hidden">
+                    <div class="left">
+                        <img src="img/brush.png" alt="Parrot">
+                        <span>+120</span>
+                    </div>
+                    <div class="right">
+                        <img src="img/penny.svg" alt="Penny">
+                        <span>10000</span>
+                    </div>
+                </button>
+                <button id="couchButton" class="hidden">
+                    <div class="left">
+                        <img src="img/couch.png" alt="Parrot">
+                        <span>+150</span>
+                    </div>
+                    <div class="right">
+                        <img src="img/penny.svg" alt="Penny">
+                        <span>20000</span>
+                    </div>
+                </button>
+                <button id="photoButton" class="hidden">
+                    <div class="left">
+                        <img src="img/photo.png" alt="Parrot">
+                        <span>+175</span>
+                    </div>
+                    <div class="right">
+                        <img src="img/penny.svg" alt="Penny">
+                        <span>35000</span>
+                    </div>
+                </button>
+                <button id="cursorButton1000" class="hidden">
+                    <div class="left">
+                        <img src="img/parrot.png" alt="Parrot">
+                        <span>+3</span>
+                    </div>
+                    <div class="right">
+                        <img src="img/penny.svg" alt="Penny">
+                        <span>2000</span>
+                    </div>
+                </button>
+                <button id="dogButton" class="hidden">
+                    <div class="left">
+                        <img src="img/dog.png" alt="Parrot">
+                        <span>+200</span>
+                    </div>
+                    <div class="right">
+                        <img src="img/penny.svg" alt="Penny">
+                        <span>50000</span>
+                    </div>
+                </button>
+                <button id="medalButton" class="hidden">
+                    <div class="left">
+                        <img src="img/medal.png" alt="Parrot">
+                        <span>+1000</span>
+                    </div>
+                    <div class="right">
+                        <img src="img/penny.svg" alt="Penny">
+                        <span>500000</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="main">
+            <div id="adPopup" class="popup hidden nopoint">
+                <div class="popup-content">
+                    <span class="popup-close" id="popupClose">
+                        <img src="img/cross.svg" alt="Close">
+                    </span>
+                    <div class="popup-text">
+                        <p class="popup-amount">3000</p>
+                        <p class="popup-coins">PIGGY COINS</p>
+                        <button class="popup-button" id="popupButton">
+                            <img src="img/ad.svg" alt="Ad">
+                            <span>GET</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <span id="attentionText" class="attention-text">Click on me please, kind stranger!</span>
+            <div class="piggyContainer">
+                <img id="piggy" class="piggy-img" src="img/piggy.svg" alt="Piggy">
+                <div class="bought-items-container"></div>
+            </div>
+            <div class="menu">
+                <div class="bought-item" id="sound">
+                    <img src="img/sound.svg" alt="Sound" id="soundimg">
+                </div>
+                <div class="bought-item" id="music">
+                    <img src="img/music.svg" alt="">
+                </div>
+                <div class="bought-item" id="ad">
+                    <img src="img/watchAd.svg" alt="" id="adimg">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

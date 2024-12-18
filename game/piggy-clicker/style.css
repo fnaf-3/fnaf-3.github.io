@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Inria Sans', sans-serif;
+    user-select: none; /* Prevent text selection */
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    background: url("img/r.png") no-repeat center center; /* Ensure the background image is centered */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    width: 70%; /* Adjusted to make the main section 70% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative; /* Added to position attention text and penny animation */
+    overflow: hidden;
+}
+
+.attention-text {
+    font-size: 35px; /* Original size */
+    color: #311555;
+    animation: pulse 3s infinite; /* Slower animation */
+    margin-bottom: 50px; /* Original size */
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1); /* Smaller scale increase */
+    }
+}
+
+.piggy-img {
+    width: 14.95vw;
+    height: auto;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.piggy-img:active {
+    filter: brightness(80%) sepia(1) hue-rotate(-50deg) saturate(500%);
+}
+
+.penny {
+    position: absolute;
+    width: 50px; /* Original size */
+    height: auto;
+    opacity: 0;
+    animation: jump 1s ease-in-out forwards; /* Reverted to original animation */
+}
+
+.penny img {
+    width: 100%; /* Ensure the image maintains the container size */
+    height: auto;
+    animation: rotate var(--rotation-duration) linear infinite;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    40% {
+        transform: translateY(-280px) translateX(var(--direction)); /* 30% less distance */
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0) translateX(calc(3 * var(--direction)));
+        opacity: 0;
+    }
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.heart {
+    position: absolute;
+    width: 60px; /* Original size */
+    height: auto;
+    opacity: 0;
+    animation: heart-animation 1s ease-in-out forwards;
+}
+
+@keyframes heart-animation {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px) translateX(0); /* Adjust direction and distance */
+        opacity: 0;
+    }
+}
+
+.train {
+    position: absolute;
+    width: 60px; /* Original size */
+    height: auto;
+    bottom: 0;
+    animation: trainAppear 1s ease-in-out;
+}
+
+@keyframes no-no {
+    0%, 100% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(-15deg);
+    }
+    75% {
+        transform: rotate(15deg);
+    }
+}
+
+#coinCount img.animate {
+    animation: no-no 0.5s;
+}
+
+@keyframes trainAppear {
+    0% {
+        opacity: 0;
+        transform: translateY(-200px) rotate(-20deg);
+    }
+    50% {
+        transform: translateY(20px) rotate(10deg);
+    }
+    70% {
+        transform: translateY(-10px) rotate(-5deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) rotate(0);
+    }
+}
+
+.bought-item, .penny {
+    pointer-events: none;
+}
+
+/* Ensure the piggy can be interacted with */
+#piggy {
+    pointer-events: auto;
+}
+
+@keyframes itemEntrance {
+    0% {
+        transform: translateY(-200px) rotate(-20deg);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(20px) rotate(10deg);
+    }
+    70% {
+        transform: translateY(-10px) rotate(-5deg);
+    }
+    100% {
+        transform: translateY(0) rotate(0);
+        opacity: 1;
+    }
+}
+
+.bought-item {
+    animation: itemEntrance 1s ease-in-out;
+    bottom: 200%;
+    width: 3vw;
+    min-width: 50px;
+}
+
+.piggyContainer {
+    width: 14.95vw;
+    position: relative;
+}
+
+.bought-items-container {
+    position: absolute;
+    transform: translate(-300px, 260px);
+}
+
+/* New CSS for rotating the music button */
+@keyframes rotateMusic {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes rotateMusicBack {
+    0% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#music.rotated {
+    animation: rotateMusic 0.5s forwards;
+}
+
+#music.rotated-back {
+    animation: rotateMusicBack 0.5s forwards;
+}
+
+@media screen and (max-width: 1000px) {
+    .piggy-img {
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 1142px) {
+    .attention-text {
+        font-size: 20px;
+        z-index: -200;
+    }
+}
+
+@media screen and (max-width: 554px) {
+    .attention-text {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+    }
+    .container {
+        display: grid;
+        grid-auto-flow: dense; 
+    }
+    .main {
+        display: grid;
+        text-align: center;
+        height: 100vw;
+        width: 100%;
+        z-index: 100;
+        order: 1;
+    }
+
+    .penny {
+        width: 50px;
+        top: 100px;
+        left: 100px;
+    }
+
+    .attention-text {
+        display: none;
+        pointer-events: none;
+    }
+
+    .piggy {
+        width: 100%;
+    }
+
+    .piggy-img {
+        width: 40vw;
+        padding-right: 250px;
+    }
+
+    .attention-text {
+        transform: translateY(-5000px);
+    }
+}

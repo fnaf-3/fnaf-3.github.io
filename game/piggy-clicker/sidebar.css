@@ -1,0 +1,186 @@
+.bar {
+    width: 30%; /* Adjusted to make the bar section 25% */
+    background-color: #E5DAFE;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    user-select: none; /* Prevent text selection */
+}
+
+
+
+
+#coinCount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 42px; /* Positioned 42px below the top */
+    transform: translateY(20PX);
+    transform: translateX(20px);
+}
+
+@media screen and (max-width: 1000px) {
+    #coinCount{
+        transform: translateX(20%);
+    }
+    #coinValue{
+        font-size: 20px;
+    }
+}
+
+#coinCount img {
+    width: 4vw;
+    min-width: 48px;
+    height: auto;
+    margin-right: 10px; /* Added margin to space between image and text */
+}
+
+#coinValue {
+    font-size: 3.5vw; /* Updated font size to 38px */
+    font-weight: bold;
+    color: #E7567C;
+    width: 100px; /* Fixed width to prevent shifting */
+    text-align: left;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 78px;
+}
+
+@keyframes fadeIn {
+    0% {
+        
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+}
+
+button.hidden {
+    opacity: 0;
+    transition: opacity 0.833s, transform 0.833s; /* Faster animation */
+}
+
+button.show {
+    opacity: 1;
+    animation: fadeIn .5s ease-in-out forwards;
+}
+
+button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A5627A;
+    width: 25.40vw;
+    padding: 1.41vw;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.15s, transform 0.15s; /* Faster hover animation */
+}
+
+button:hover {
+    background-color: #A83E64;
+    transform: scale(0.97); /* Make button smaller by 3% */
+}
+
+button .left,
+button .right {
+    display: flex;
+    align-items: center;
+}
+
+button .left img,
+button .right img {
+    width: 3.49vw; /* Reduced size by 20% */
+    height: auto;
+    margin-right: 2px;
+}
+
+button .left span,
+button .right span {
+    font-size: 2vw;
+    font-family: 'Inria Sans', sans-serif;
+}
+
+button .left span {
+    color: #FFC7DB;
+    font-size: 24px; /* Reduced size by 50% */
+}
+
+button .right img {
+    width: 3.49vw;
+    height: auto;
+    margin-right: 7px;
+}
+
+button .right span {
+    color: #fff;
+}
+
+button.disappear {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+
+@media screen and (max-width: 800px){
+    .button-group{
+        transform: translateY(-50px);
+    }
+}
+
+@media screen and (max-width: 450px){
+    .bar{
+        order: 0;
+        width: 100%;
+        grid-row: 2;
+    }
+
+    #coinCount{
+        margin-top: 20px;
+    }
+
+    #coinValue {
+        font-size: 20px;
+    }
+
+    #coinCount img{
+        width: 30px;
+    }
+
+    .button-group{
+        gap: 11px;
+    }
+
+    button .left img{
+        width: 20px;
+    }
+
+    button .right span{
+        font-size: 20px;
+    }
+
+    .button-group button{
+        width: 90vw;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+
+    .right{
+        gap: 10px;
+        flex-direction: row-reverse;
+    }
+}
+
+
+
+
+
