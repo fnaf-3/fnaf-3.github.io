@@ -7,6 +7,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="shortcut icon" href="/img/nho (1).png" />
+    <style>
+      .terms-content {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .terms-content h1 {
+        text-align: center;
+        color: #333;
+        font-size: 2.5em;
+        margin-bottom: 30px;
+        position: relative;
+        padding-bottom: 15px;
+      }
+
+      .terms-content h1::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 3px;
+        background: linear-gradient(90deg, #ff4e50, #f9d423);
+      }
+
+      .terms-section {
+        margin: 30px 0;
+        padding: 20px;
+        border-radius: 8px;
+        background: #f8f9fa;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .terms-section:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .terms-section h2 {
+        color: #2c3e50;
+        font-size: 1.5em;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #e9ecef;
+      }
+
+      .terms-section p {
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 15px;
+      }
+
+      .terms-section ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .terms-section ul li {
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 10px;
+        color: #666;
+      }
+
+      .terms-section ul li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: #ff4e50;
+        font-size: 1.2em;
+      }
+
+      .terms-section:nth-child(even) {
+        background: #fff;
+        border: 1px solid #e9ecef;
+      }
+
+      @media (max-width: 768px) {
+        .terms-content {
+          margin: 20px;
+          padding: 15px;
+        }
+
+        .terms-content h1 {
+          font-size: 2em;
+        }
+
+        .terms-section {
+          padding: 15px;
+        }
+      }
+
+      /* Animation for sections */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .terms-section {
+        animation: fadeInUp 0.5s ease forwards;
+        opacity: 0;
+      }
+
+      .terms-section:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      .terms-section:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      .terms-section:nth-child(3) {
+        animation-delay: 0.3s;
+      }
+      .terms-section:nth-child(4) {
+        animation-delay: 0.4s;
+      }
+      .terms-section:nth-child(5) {
+        animation-delay: 0.5s;
+      }
+      .terms-section:nth-child(6) {
+        animation-delay: 0.6s;
+      }
+      .terms-section:nth-child(7) {
+        animation-delay: 0.7s;
+      }
+      .terms-section:nth-child(8) {
+        animation-delay: 0.8s;
+      }
+    </style>
   </head>
   <body>
     <div class="wrap-header">
@@ -32,16 +171,6 @@
                 />
               </a>
             </label>
-            <ul>
-              <li><a href="./category/new.html">New🔥</a></li>
-              <li><a href="./category/running.html">Running🏃</a></li>
-              <li><a href="./category/car.html">Car🚖</a></li>
-              <li><a href="./category/puzzle.html">Puzzle♻️</a></li>
-              <li><a href="./category/sports.html">Sports⚽</a></li>
-              <li><a href="./category/action.html">Action💪</a></li>
-              <li><a href="./category/shooting.html">Shooting☄️</a></li>
-              <li><a href="./category/adventure.html">Adventure🚩</a></li>
-            </ul>
           </nav>
         </div>
       </header>
@@ -130,9 +259,11 @@
         </section>
 
         <section class="terms-section">
-          <h2>Contact</h2>
+          <h2>Contact Us</h2>
           <p>
-            If you have questions about these Terms of Use, please contact us.
+            If you have any questions about these Terms of Use, please don't
+            hesitate to contact us. We're here to help and ensure your
+            experience with Capybara Clicker is the best it can be.
           </p>
         </section>
       </div>
@@ -144,30 +275,21 @@
           <div class="ft-links">
             <div class="ft-copyright">
               <span>
-                <p style="text-align: center; color: #fff">
+                <p class="copyright-text">
                   <strong
                     >Copyright © 2024 Capybara Clicker. All Rights
                     Reserved</strong
                   >
                   <br />
-                  <a
-                    href="./termsofuse.html"
-                    style="
-                      color: #fff;
-                      text-decoration: underline;
-                      margin: 0 10px;
-                    "
-                    >Terms of Use</a
-                  >
-                  <a
-                    href="./privacypolicy.html"
-                    style="
-                      color: #fff;
-                      text-decoration: underline;
-                      margin: 0 10px;
-                    "
-                    >Privacy Policy</a
-                  >
+                  <span class="footer-links">
+                    <a href="./termsofuse.html" class="footer-link"
+                      >Terms of Use</a
+                    >
+                    <span class="separator">•</span>
+                    <a href="./privacypolicy.html" class="footer-link"
+                      >Privacy Policy</a
+                    >
+                  </span>
                 </p>
               </span>
             </div>

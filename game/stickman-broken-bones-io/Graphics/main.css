@@ -1,0 +1,33 @@
+﻿* {
+    transition: all 0.5s;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+@font-face {
+    src: url("tovari-sans.otf");
+    font-family: Troika;
+}
+
+body, html {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Troika, Arial, sans-serif;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+canvas {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}

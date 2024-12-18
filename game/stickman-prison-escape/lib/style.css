@@ -1,0 +1,29 @@
+html, body {
+     /* touch-action: manipulation; */
+     touch-action: none;
+}
+body {
+     background-color: #9900CC;
+     -webkit-tap-highlight-color: transparent;
+     -webkit-touch-callout: none;
+     -webkit-user-select: none;
+     -khtml-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+     overflow: hidden;
+}
+
+#progress {
+    height: 10px;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    transition: width 0.5s ease;
+    top: 80%;
+    opacity: 1;
+    z-index: 2;
+
+}
+canvas {
+     -webkit-tap-highlight-color: transparent;
+}

@@ -1,0 +1,272 @@
+﻿#shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.25;
+    background: black;
+    z-index: 0;
+}
+
+#loading-screen {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    z-index: 1;
+}
+
+@media (orientation: landscape) {
+    .logo {
+        display: inline-block;
+        width: 50vh;
+        height: 50vh;
+        margin-bottom: 4vh;
+        background-image: url('logo.jpg');
+        background-size: cover;
+        background-position: center;
+        border-radius: 30px;
+        border: 0.5px solid black;
+        box-shadow: 5px 5px 15px #00000055;
+        z-index: 1;
+    }
+    .hint-container {
+        margin-bottom: 2vh;
+        font-size: 6vh;
+        line-height: 6vh;
+
+        color: white;
+        text-shadow: -0.5px -0.5px 0 black,
+            0.5px -0.5px 0 black,
+            -0.5px 0.5px 0 black,
+            0.5px 0.5px 0 black,
+            2px 2px 1px #00000055;
+
+        z-index: 1;
+        animation: hintAttention 2s infinite;
+    }
+    .progress-container {
+        width: 50vh;
+        height: 10vh;
+
+        background: url("loading_BarLight.png");
+        background-size: 50vh 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        position: relative;
+        z-index: 1;
+    }
+    #progress-bar {
+        position: absolute;
+        height: 100%;
+        width: 0;
+
+        background: url("loading_BarFillBlue.png");
+        background-size: 50vh 100%;
+    
+        background-repeat: no-repeat;
+
+        z-index: 1;
+    }
+    #progress-text {
+        position: absolute;
+        bottom: -6vh;
+        left: 50%;
+        transform: translateX(-50%);
+
+        font-size: 6vh;
+        color: white;
+        text-shadow: -0.5px -0.5px 0 black,
+            0.5px -0.5px 0 black,
+            -0.5px 0.5px 0 black,
+            0.5px 0.5px 0 black,
+            2px 2px 1px #00000055;
+
+        z-index: 1;
+    }
+    #company-name {
+        position: absolute;
+        left: 2vw;
+        bottom: 2vw;
+
+        font-size: 5vh;
+        color: white;
+        text-shadow: -0.5px -0.5px 0 black,
+            0.5px -0.5px 0 black,
+            -0.5px 0.5px 0 black,
+            0.5px 0.5px 0 black,
+            2px 2px 1px #00000055;
+        opacity: 0.5;
+
+        z-index: 1;
+    }
+    #version-number {
+        position: absolute;
+        right: 2vw;
+        bottom: 2vw;
+
+        font-size: 5vh;
+        color: white;
+        text-shadow: -0.5px -0.5px 0 black,
+            0.5px -0.5px 0 black,
+            -0.5px 0.5px 0 black,
+            0.5px 0.5px 0 black,
+            2px 2px 1px #00000055;
+        opacity: 0.5;
+
+        z-index: 1;
+    }
+}
+
+@media (orientation: portrait) {
+    .logo {
+        display: inline-block;
+        width: 50vw;
+        height: 50vw;
+        margin-bottom: 5vh;
+        background-image: url('logo.jpg');
+        background-size: cover;
+        background-position: center;
+        border-radius: 30px;
+        border: 0.5px solid black;
+        box-shadow: 5px 5px 15px #00000055;
+        z-index: 1;
+    }
+    .hint-container {
+        font-size: 8vw;
+        line-height: 8vw;
+        margin-bottom: 2vh;
+
+        color: white;
+        text-shadow: -0.5px -0.5px 0 black,
+            0.5px -0.5px 0 black,
+            -0.5px 0.5px 0 black,
+            0.5px 0.5px 0 black,
+            2px 2px 1px #00000055;
+
+        z-index: 1;
+        animation: hintAttention 2s infinite;
+    }
+    .progress-container {
+        width: 50vw;
+        height: 8vh;
+
+        background: url("loading_BarLight.png");
+        background-size: 50vw 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        position: relative;
+        z-index: 1;
+    }
+    #progress-bar {
+        position: absolute;
+        height: 100%;
+        width: 0;
+
+        background: url("loading_BarFillBlue.png");
+        background-size: 50vw 100%;
+    
+        background-repeat: no-repeat;
+
+        z-index: 1;
+    }
+    #progress-text {
+        position: absolute;
+        bottom: -3rem;
+        left: 50%;
+        transform: translateX(-50%);
+
+        font-size: 8vw;
+        line-height: 8vw;
+
+        color: white;
+        text-shadow: -0.5px -0.5px 0 black,
+            0.5px -0.5px 0 black,
+            -0.5px 0.5px 0 black,
+            0.5px 0.5px 0 black,
+            2px 2px 1px #00000055;
+
+        z-index: 1;
+    }
+    #company-name {
+        position: absolute;
+        
+        width: 100%;
+        left: 0;
+        bottom: 8vh;
+        font-size: 6vw;
+        line-height: 6vw;
+        text-align: center;
+
+        color: white;
+        text-shadow: -0.5px -0.5px 0 black,
+            0.5px -0.5px 0 black,
+            -0.5px 0.5px 0 black,
+            0.5px 0.5px 0 black,
+            2px 2px 1px #00000055;
+        opacity: 0.5;
+
+        z-index: 1;
+    }
+    #version-number {
+        position: absolute;
+        
+        width: 100%;
+        left: 0;
+        bottom: 4vh;
+        font-size: 6vw;
+        line-height: 6vw;
+        text-align: center;
+
+        color: white;
+        text-shadow: -0.5px -0.5px 0 black,
+            0.5px -0.5px 0 black,
+            -0.5px 0.5px 0 black,
+            0.5px 0.5px 0 black,
+            2px 2px 1px #00000055;
+        opacity: 0.5;
+
+        z-index: 1;
+    }
+}
+
+@media (min-aspect-ratio:2/3) and (max-aspect-ratio:3/2) {
+	#company-name {
+        left: 4vw;
+        bottom: 4vw;
+	  width: auto;
+	  text-align: left;
+    }
+    #version-number {
+        right: 4vw;
+        bottom: 4vw;
+	  width: auto;
+	  text-align: right;
+    }
+}
+
+@keyframes hintAttention {
+    0% {
+        transform: scale(1.0);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}
+
+#dots {
+    position: absolute;
+    left: 100%;
+}

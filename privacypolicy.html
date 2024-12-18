@@ -7,6 +7,145 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="shortcut icon" href="/img/nho (1).png" />
+    <style>
+      .privacy-content {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .privacy-content h1 {
+        text-align: center;
+        color: #333;
+        font-size: 2.5em;
+        margin-bottom: 30px;
+        position: relative;
+        padding-bottom: 15px;
+      }
+
+      .privacy-content h1::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 3px;
+        background: linear-gradient(90deg, #ff4e50, #f9d423);
+      }
+
+      .privacy-section {
+        margin: 30px 0;
+        padding: 20px;
+        border-radius: 8px;
+        background: #f8f9fa;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .privacy-section:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .privacy-section h2 {
+        color: #2c3e50;
+        font-size: 1.5em;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #e9ecef;
+      }
+
+      .privacy-section p {
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 15px;
+      }
+
+      .privacy-section ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .privacy-section ul li {
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 10px;
+        color: #666;
+      }
+
+      .privacy-section ul li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: #ff4e50;
+        font-size: 1.2em;
+      }
+
+      .privacy-section:nth-child(even) {
+        background: #fff;
+        border: 1px solid #e9ecef;
+      }
+
+      @media (max-width: 768px) {
+        .privacy-content {
+          margin: 20px;
+          padding: 15px;
+        }
+
+        .privacy-content h1 {
+          font-size: 2em;
+        }
+
+        .privacy-section {
+          padding: 15px;
+        }
+      }
+
+      /* Animation for sections */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .privacy-section {
+        animation: fadeInUp 0.5s ease forwards;
+        opacity: 0;
+      }
+
+      .privacy-section:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      .privacy-section:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      .privacy-section:nth-child(3) {
+        animation-delay: 0.3s;
+      }
+      .privacy-section:nth-child(4) {
+        animation-delay: 0.4s;
+      }
+      .privacy-section:nth-child(5) {
+        animation-delay: 0.5s;
+      }
+      .privacy-section:nth-child(6) {
+        animation-delay: 0.6s;
+      }
+      .privacy-section:nth-child(7) {
+        animation-delay: 0.7s;
+      }
+      .privacy-section:nth-child(8) {
+        animation-delay: 0.8s;
+      }
+    </style>
   </head>
   <body>
     <div class="wrap-header">
@@ -32,16 +171,6 @@
                 />
               </a>
             </label>
-            <ul>
-              <li><a href="./category/new.html">New🔥</a></li>
-              <li><a href="./category/running.html">Running🏃</a></li>
-              <li><a href="./category/car.html">Car🚖</a></li>
-              <li><a href="./category/puzzle.html">Puzzle♻️</a></li>
-              <li><a href="./category/sports.html">Sports⚽</a></li>
-              <li><a href="./category/action.html">Action💪</a></li>
-              <li><a href="./category/shooting.html">Shooting☄️</a></li>
-              <li><a href="./category/adventure.html">Adventure🚩</a></li>
-            </ul>
           </nav>
         </div>
       </header>
@@ -54,9 +183,10 @@
         <section class="privacy-section">
           <h2>Introduction</h2>
           <p>
-            Welcome to Capybara Clicker. We respect your privacy and are
-            committed to protecting your personal data. This privacy policy will
-            inform you about how we handle your data when you visit our website.
+            Welcome to Capybara Clicker. We value your privacy and are committed
+            to protecting your personal data. This privacy policy explains how
+            we handle your information when you visit our website and use our
+            services.
           </p>
         </section>
 
@@ -67,6 +197,8 @@
             <li>Usage data (pages visited, time spent on site)</li>
             <li>Device information (browser type, operating system)</li>
             <li>IP address and location data</li>
+            <li>Game preferences and progress data</li>
+            <li>Communication data if you contact us</li>
           </ul>
         </section>
 
@@ -78,15 +210,31 @@
             <li>Analyze user behavior and preferences</li>
             <li>Maintain site security</li>
             <li>Provide customer support</li>
+            <li>Enhance game features and performance</li>
           </ul>
+        </section>
+
+        <section class="privacy-section">
+          <h2>Data Protection</h2>
+          <p>
+            We implement appropriate security measures to protect your
+            information. However, no internet transmission is completely secure,
+            and we cannot guarantee absolute security.
+          </p>
         </section>
 
         <section class="privacy-section">
           <h2>Cookies</h2>
           <p>
             We use cookies to enhance your gaming experience. These cookies help
-            us remember your game progress and preferences.
+            us:
           </p>
+          <ul>
+            <li>Remember your game progress</li>
+            <li>Store your preferences</li>
+            <li>Analyze site usage</li>
+            <li>Improve site performance</li>
+          </ul>
         </section>
 
         <section class="privacy-section">
@@ -94,7 +242,8 @@
           <p>
             Capybara Clicker is suitable for all ages. We do not knowingly
             collect personal information from children under 13 without parental
-            consent.
+            consent. If you believe we have collected information from a child
+            under 13, please contact us immediately.
           </p>
         </section>
 
@@ -102,15 +251,17 @@
           <h2>Changes to This Policy</h2>
           <p>
             We may update this privacy policy from time to time. Any changes
-            will be posted on this page.
+            will be posted on this page with an updated revision date. We
+            encourage you to review this policy periodically.
           </p>
         </section>
 
         <section class="privacy-section">
           <h2>Contact Us</h2>
           <p>
-            If you have any questions about this privacy policy, please contact
-            us.
+            If you have any questions about this privacy policy or our
+            practices, please don't hesitate to contact us. We're here to help
+            ensure your privacy and provide the best possible gaming experience.
           </p>
         </section>
       </div>
@@ -122,30 +273,21 @@
           <div class="ft-links">
             <div class="ft-copyright">
               <span>
-                <p style="text-align: center; color: #fff">
+                <p class="copyright-text">
                   <strong
                     >Copyright © 2024 Capybara Clicker. All Rights
                     Reserved</strong
                   >
                   <br />
-                  <a
-                    href="./termsofuse.html"
-                    style="
-                      color: #fff;
-                      text-decoration: underline;
-                      margin: 0 10px;
-                    "
-                    >Terms of Use</a
-                  >
-                  <a
-                    href="./privacypolicy.html"
-                    style="
-                      color: #fff;
-                      text-decoration: underline;
-                      margin: 0 10px;
-                    "
-                    >Privacy Policy</a
-                  >
+                  <span class="footer-links">
+                    <a href="./termsofuse.html" class="footer-link"
+                      >Terms of Use</a
+                    >
+                    <span class="separator">•</span>
+                    <a href="./privacypolicy.html" class="footer-link"
+                      >Privacy Policy</a
+                    >
+                  </span>
                 </p>
               </span>
             </div>

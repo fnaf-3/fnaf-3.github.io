@@ -645,12 +645,14 @@
             <div class="ft-links">
               <div class="ft-copyright">
                 <span>
-                  <p style="text-align: center; color: #fff">
-                    <strong
-                      >Copyright © 2024 Fnaf 3. All Rights
-                      Reserved</strong
-                    >
+                  <p class="copyright-text">
+                    <strong>Copyright © 2024 Fnaf 3. All Rights Reserved</strong>
                     <br />
+                    <span class="footer-links">
+                      <a href="./termsofuse.html" class="footer-link">Terms of Use</a>
+                      <span class="separator">•</span>
+                      <a href="./privacypolicy.html" class="footer-link">Privacy Policy</a>
+                    </span>
                   </p>
                 </span>
               </div>
@@ -872,6 +874,74 @@
 
     ::-webkit-scrollbar-thumb:hover {
       background: #555;
+    }
+
+    .copyright-text {
+      text-align: center;
+      color: #fff;
+      font-size: 14px;
+      line-height: 1.6;
+      margin: 0;
+      padding: 15px 0;
+    }
+
+    .footer-links {
+      display: inline-block;
+      margin-top: 8px;
+    }
+
+    .footer-link {
+      color: #fff;
+      text-decoration: none;
+      position: relative;
+      transition: all 0.3s ease;
+      padding: 2px 4px;
+    }
+
+    .footer-link::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      background-color: #fff;
+      transform: scaleX(0);
+      transform-origin: bottom right;
+      transition: transform 0.3s ease;
+    }
+
+    .footer-link:hover {
+      color: #ffd700;
+    }
+
+    .footer-link:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+
+    .separator {
+      display: inline-block;
+      margin: 0 10px;
+      color: #ffd700;
+      font-size: 12px;
+    }
+
+    /* Thêm animation khi hover vào separator */
+    .separator {
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        opacity: 0.6;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0.6;
+      }
     }
   </style>
 </html>

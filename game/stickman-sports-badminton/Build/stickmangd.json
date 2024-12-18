@@ -1,0 +1,17 @@
+{
+"companyName": "RHM",
+"productName": "Stickman Sports Badminton ",
+"productVersion": "0.1",
+"dataUrl": "stickmangd.data.unityweb",
+"wasmCodeUrl": "stickmangd.wasm.code.unityweb",
+"wasmFrameworkUrl": "stickmangd.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"backgroundUrl": "stickmangd.jpg",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#FFFFFF",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.15f1"
+}
