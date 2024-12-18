@@ -1,0 +1,914 @@
+{
+    "c2array": true,
+    "size": [
+        2,
+        150,
+        1
+    ],
+    "data": [
+        [
+            [
+                "Play"
+            ],
+            [
+                "Buy"
+            ],
+            [
+                "Choose"
+            ],
+            [
+                "+1"
+            ],
+            [
+                "Choose a bow"
+            ],
+            [
+                "Wood Bow"
+            ],
+            [
+                "Spike fuze"
+            ],
+            [
+                "Poisonous whisper"
+            ],
+            [
+                "Blazing Hurricane"
+            ],
+            [
+                "Ice storm"
+            ],
+            [
+                "Thunder"
+            ],
+            [
+                "Duplicate"
+            ],
+            [
+                "Divider"
+            ],
+            [
+                "Magnetic cover"
+            ],
+            [
+                "Explosive Spirit"
+            ],
+            [
+                "Vortex of Arrows"
+            ],
+            [
+                "Will of the King"
+            ],
+            [
+                "Spartan Spirit"
+            ],
+            [
+                "Information"
+            ],
+            [
+                "Made from carefully selected wood, this bow is the perfect combination of elegance and deadly performance.\r\nHis arrows, although ordinary wooden ones, have amazing strength and accuracy. A targeted shot to the head immediately takes the life of the enemy, leaving only dead silence on the battlefield."
+            ],
+            [
+                "Every arrow fired from this bow instantly explodes upon hitting an enemy, releasing a huge spike that penetrates the toughest armor or defense.\r\nThis spike deals colossal damage, capable of destroying even the most dangerous opponents."
+            ],
+            [
+                "Combines lethality and meanness.\r\nWhen hit, it poisons the enemy, who slowly but surely every second begins to remove the enemy’s health, plunging him into the abyss of torment and suffering."
+            ],
+            [
+                "Every arrow fired from this bow bursts into flames with stunning effect. On impact, it ignites the enemy, burning their flesh and causing ongoing Fire damage. Every 1.5 seconds, the fire deals additional damage, plunging the enemy into excruciating agony and merciless flames."
+            ],
+            [
+                "Possesses chilling fury and the power of cold.\r\nEach arrow fired from this bow instantly freezes the enemy, paralyzing and making it impossible to attack."
+            ],
+            [
+                "Possesses the power of thunder and lightning.\r\nWhen hit by an arrow, it delivers a painful electric shock that stuns all nearby enemies within a 300 pixel radius."
+            ],
+            [
+                "When the arrow reaches its target, it instantly breaks into three new arrows.\r\nThis explosive cascade creates an effective destruction network,\r\ncapable of attacking multiple enemies at once."
+            ],
+            [
+                "It has the unique ability to cut an enemy into three pieces when hit by an arrow. Each shot of this bow creates powerful claws that penetrate the enemy's body and cut it into three parts."
+            ],
+            [
+                "Possessing the unique ability to manipulate magnetic forces. When an arrow from this bow hits a target, it instantly creates a powerful magnetic field that attracts all arrows flying nearby."
+            ],
+            [
+                "Capable of causing devastating damage to enemies.\r\nWhen this bow's arrow hits its target, it instantly explodes, creating a powerful explosion. This explosion reaches the enemy within a 50 pixel radius, dealing incredible damage to all enemies around."
+            ],
+            [
+                "A mysterious weapon that can fire one random arrow from the player's arsenal.\r\nEach bow shot presents a unique opportunity, as the player never knows which arrow will be used."
+            ],
+            [
+                "This bow has an amazing magical ability that allows you to control the enemy's arrows.\r\nAll flying arrows within a certain radius instantly change their direction and begin to move along with the arrow. They become under the control of the main arrow and begin to attack opponents."
+            ],
+            [
+                "A true symbol of the strength and power of the Spartan warriors. Each shot with this bow causes a small amount of damage to the enemy, but its true power is manifested in the magical Spartan kick that is released when the arrow hits the target.\nWhen hit, the bow creates a surge of magical energy that instantly tramples the enemy into the ground with force."
+            ],
+            [
+                "Purchase completed!"
+            ],
+            [
+                "Insufficient funds!"
+            ],
+            [
+                "Loading..."
+            ],
+            [
+                "Choose a helmet"
+            ],
+            [
+                "Spartan helmet"
+            ],
+            [
+                "Titanium mask"
+            ],
+            [
+                "Cocked hat"
+            ],
+            [
+                "Hitayate"
+            ],
+            [
+                "Aviator glasses"
+            ],
+            [
+                "Goalie mask"
+            ],
+            [
+                "Iroquois"
+            ],
+            [
+                "Fire cover"
+            ],
+            [
+                "Samurai helmet"
+            ],
+            [
+                "Fire helmet"
+            ],
+            [
+                "Doctor's bandage"
+            ],
+            [
+                "Bandana"
+            ],
+            [
+                "Fiend Helm"
+            ],
+            [
+                "Robin hat"
+            ],
+            [
+                "Druid's Cape"
+            ],
+            [
+                "Yakuza Headband"
+            ],
+            [
+                "Monk hat"
+            ],
+            [
+                "Alien Helmet"
+            ],
+            [
+                "  Health"
+            ],
+            [
+                "  Arrow protection"
+            ],
+            [
+                "  Regeneration"
+            ],
+            [
+                "  Armor"
+            ],
+            [
+                "Achievements"
+            ],
+            [
+                "Leaderboards"
+            ],
+            [
+                "Loading..."
+            ],
+            [
+                "Are you on"
+            ],
+            [
+                "place"
+            ],
+            [
+                "Done!"
+            ],
+            [
+                "Your reward!"
+            ],
+            [
+                "Pause"
+            ],
+            [
+                "Menu"
+            ],
+            [
+                "Continue"
+            ],
+            [
+                "Click to start playing"
+            ],
+            [
+                "Today"
+            ],
+            [
+                "All the time"
+            ],
+            [
+                "No one has made it to the top yet!"
+            ],
+            [
+                "The wave has passed!"
+            ],
+            [
+                "Defeat!"
+            ],
+            [
+                "Resurrect"
+            ],
+            [
+                "Start again"
+            ],
+            [
+                "Menu"
+            ],
+            [
+                "Optimizing Effects"
+            ],
+            [
+                "Wave:"
+            ],
+            [
+                "Forward!"
+            ],
+            [
+                "Next wave"
+            ],
+            [
+                "Wheel of Fortune"
+            ],
+            [
+                "Spin!"
+            ],
+            [
+                "You can knock out: gold, experience, hats and bows."
+            ],
+            [
+                "Available!"
+            ],
+            [
+                "Strong enemies"
+            ],
+            [
+                "Bonus accumulation!"
+            ],
+            [
+                "Do you want to open?"
+            ],
+            [
+                "Open"
+            ],
+            [
+                "There are not enough crowns to receive the bonus!"
+            ],
+            [
+                "Get"
+            ],
+            [
+                "Get an award!"
+            ],
+            [
+                "New level!"
+            ],
+            [
+                "Find the prize!"
+            ],
+            [
+                "There's a cool prize hidden in one of the glasses! Find her!"
+            ],
+            [
+                "Alas, no luck..."
+            ],
+            [
+                "Random chest"
+            ],
+            [
+                "There is a prize hidden in one of the chests!"
+            ],
+            [
+                "you took"
+            ],
+            [
+                "place"
+            ],
+            [
+                "The game is currently open in another tab!\r\nClose all game tabs and refresh the page!"
+            ],
+            [
+                "Shoot back the arrows"
+            ],
+            [
+                "Cut the apples"
+            ],
+            [
+                "Protect yourself from bombs"
+            ],
+            [
+                "Hit the target"
+            ],
+            [
+                "Dark side"
+            ],
+            [
+                "Keen vision"
+            ],
+            [
+                "  Reflection"
+            ],
+            [
+                "  Vampirism"
+            ],
+            [
+                "Special Items"
+            ],
+            [
+                "Settings"
+            ],
+            [
+                "+300"
+            ],
+            [
+                "Unlock your bow to use in battle!"
+            ],
+            [
+                "Close"
+            ],
+            [
+                "No helmet"
+            ],
+            [
+                "Must be purchased to wear."
+            ],
+            [
+                "Win battles and earn cups!\nFor victory you get 10 tokens"
+            ],
+            [
+                "Bought!"
+            ],
+            [
+                "Reset the waves"
+            ],
+            [
+                "Attention! The wave reset cannot be reversed!"
+            ],
+            [
+                "Reset"
+            ],
+            [
+                "Reset waves to 1?"
+            ],
+            [
+                "The waves are dropped!"
+            ],
+            [
+                "Get"
+            ],
+            [
+                "Player"
+            ],
+            [
+                "Bloody mode"
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ]
+        ],
+        [
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ],
+            [
+                ""
+            ]
+        ]
+    ]
+}

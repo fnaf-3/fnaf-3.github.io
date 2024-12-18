@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<script src="lib/howler.min.js?v=2.2.3"></script>
+		<script src="lib/pixi-legacy.5.3.9.min.js?v=5.3.9"></script>
+		<script src="lib/Pixim.min.js?v=1.14.0"></script>
+		<title>CRAZY VAN</title>
+	</head>
+	<body style="margin:0px; overflow: hidden; background-color:#000000;">
+		<script src="lib/SCG-gd-pixim.min.js?v=1.10.19-1"></script>
+		<script>
+			SCG.init ( {
+				basepath : './',
+				version : '20240909164321' ,
+				pixiOptions : { resolution : 1 , forceCanvas : false }
+			} , {
+				gameId: "180ff7e091954817afeeebd7d2324a75",
+				sdk: "/main.min.js",
+				contentKey: "crazyvan",
+				usePrerollAd: true,
+				introOptions: {
+					icon: "icon.png",
+				}
+			} , {
+				languageOptions: 'language.json',
+				languages: [ 'en', 'ja' ],
+			} ) ;
+		</script>
+		<script src="bundle.js?v=20240909164321"></script>
+	</body>
+</html>

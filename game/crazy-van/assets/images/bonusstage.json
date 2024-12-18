@@ -1,0 +1,107 @@
+﻿{"frames": {
+
+"OK_w":
+{
+	"frame": {"x":937,"y":4,"w":46,"h":42},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":46,"h":42},
+	"sourceSize": {"w":46,"h":42}
+},
+"bonus_text_1":
+{
+	"frame": {"x":673,"y":4,"w":260,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":260,"h":82},
+	"sourceSize": {"w":260,"h":82}
+},
+"bonus_text_2":
+{
+	"frame": {"x":458,"y":436,"w":311,"h":85},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":311,"h":85},
+	"sourceSize": {"w":311,"h":85}
+},
+"bonus_title":
+{
+	"frame": {"x":673,"y":158,"w":319,"h":62},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":319,"h":62},
+	"sourceSize": {"w":319,"h":62}
+},
+"bonusstartlogo":
+{
+	"frame": {"x":673,"y":90,"w":326,"h":64},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":326,"h":64},
+	"sourceSize": {"w":326,"h":64}
+},
+"continuelogo":
+{
+	"frame": {"x":673,"y":224,"w":171,"h":46},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":171,"h":46},
+	"sourceSize": {"w":171,"h":46}
+},
+"key":
+{
+	"frame": {"x":673,"y":274,"w":59,"h":87},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":87},
+	"sourceSize": {"w":59,"h":87}
+},
+"key_02":
+{
+	"frame": {"x":736,"y":274,"w":59,"h":87},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":87},
+	"sourceSize": {"w":59,"h":87}
+},
+"night_001":
+{
+	"frame": {"x":4,"y":4,"w":450,"h":800},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":450,"h":800},
+	"sourceSize": {"w":450,"h":800}
+},
+"night_002":
+{
+	"frame": {"x":458,"y":4,"w":211,"h":212},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":211,"h":212},
+	"sourceSize": {"w":211,"h":212}
+},
+"night_003":
+{
+	"frame": {"x":458,"y":220,"w":211,"h":212},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":211,"h":212},
+	"sourceSize": {"w":211,"h":212}
+},
+"playagain":
+{
+	"frame": {"x":673,"y":365,"w":137,"h":32},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":137,"h":32},
+	"sourceSize": {"w":137,"h":32}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "21.0.2.37893",
+	"image": "bonusstage.png",
+	"format": "RGBA8888",
+	"size": {"w":1024,"h":1024},
+	"scale": "1"
+}
+}

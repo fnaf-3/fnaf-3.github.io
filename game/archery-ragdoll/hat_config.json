@@ -1,0 +1,114 @@
+{
+
+"hats_1": {
+	"hp": 40,
+	"rebound": 0,
+	"regeneration": 0,
+	"armor": 0
+	},
+"hats_2": {
+	"hp": 50,
+	"rebound": 0,
+	"regeneration": 0,
+	"armor": 2
+	},
+"hats_3": {
+	"hp": 55,
+	"rebound": 1,
+	"regeneration": 1,
+	"armor": 0
+	},
+"hats_4": {
+	"hp": 40,
+	"rebound": 0,
+	"regeneration": 3,
+	"armor": 2
+	},
+"hats_5": {
+	"hp": 45,
+	"rebound": 0,
+	"regeneration": 0,
+	"armor": 3
+	},
+"hats_6": {
+	"hp": 60,
+	"rebound": 0,
+	"regeneration": 0,
+	"armor": 3
+	},
+"hats_7": {
+	"hp": 30,
+	"rebound": 1,
+	"regeneration": 3,
+	"armor": 3
+	},
+"hats_8": {
+	"hp": 45,
+	"rebound": 1,
+	"regeneration": 2,
+	"armor": 4
+	},
+"hats_9": {
+	"hp": 48,
+	"rebound": 1,
+	"regeneration": 2,
+	"armor": 5
+	},
+"hats_10": {
+	"hp": 50,
+	"rebound": 2,
+	"regeneration": 3,
+	"armor": 5
+	},
+"hats_11": {
+	"hp": 55,
+	"rebound": 2,
+	"regeneration": 4,
+	"armor": 5
+	},
+"hats_12": {
+	"hp": 70,
+	"rebound": 2,
+	"regeneration": 4,
+	"armor": 5
+	},
+"hats_13": {
+	"hp": 66,
+	"rebound": 2,
+	"regeneration": 4,
+	"armor": 6
+	},
+"hats_14": {
+	"hp": 73,
+	"rebound": 3,
+	"regeneration": 5,
+	"armor": 6
+	},
+"hats_15": {
+	"hp": 82,
+	"rebound": 3,
+	"regeneration": 6,
+	"armor": 7
+	},
+"hats_16": {
+	"hp": 100,
+	"rebound": 3,
+	"regeneration": 7,
+	"armor": 6
+	},
+"hats_17": {
+	"hp": 120,
+	"rebound": 0,
+	"regeneration": 10,
+	"armor": 7,
+	"vampirizm": 25
+	}
+,
+"hats_18": {
+	"hp": 150,
+	"rebound": 5,
+	"regeneration": 7,
+	"armor": 0,
+	"vampirizm": 30
+	}
+}

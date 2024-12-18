@@ -1,0 +1,15 @@
+{
+    "name": "Blocks Breaker",
+    "short_name": "Blocks Breaker",
+    "start_url": "index.html",
+    "display": "fullscreen",
+    "background_color": "#000000",
+    "theme_color": "#000",
+    "description": "Blocks Breaker",
+    "icons": [{
+      "src": "TemplateData/icons/unity-logo-dark.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }]
+  }

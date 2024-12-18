@@ -1,0 +1,16 @@
+{  "skinDataList" : {
+    "list" : [
+    { "pri" : 0	 , "isUsed" : true  , "isRelease" : true  , "isSelect" : false , "value" : [ 0 ] , "skinID" : 0	 , "prog" : { "now" : null			, "max" : 0 }		, "msg" : [ "条件なし" , "デフォルトスキン" , "" ] } ,
+    { "pri" : 1	 , "isUsed" : false , "isRelease" : false , "isSelect" : false , "value" : [ 0 ] , "skinID" : 1	 , "prog" : { "now" : "loginCount"	, "max" : 2 }		, "msg" : [ "Day 2 Reword of" , "DAILY REWARD." , "" ] } ,
+    { "pri" : 4	 , "isUsed" : false , "isRelease" : false , "isSelect" : false , "value" : [ 3 ] , "skinID" : 13 , "prog" : { "now" : "loginCount"	, "max" : 7 }		, "msg" : [ "Day 7 Reword of" , "DAILY REWARD." , "" ] } ,
+    { "pri" : 6	 , "isUsed" : false , "isRelease" : false , "isSelect" : false , "value" : [ 6 ] , "skinID" : 8	 , "prog" : { "now" : "loginCount"	, "max" : 10 }		, "msg" : [ "Login for 10 days." , "" , "" ] } ,
+    { "pri" : 9	 , "isUsed" : false , "isRelease" : false , "isSelect" : false , "value" : [ 9 ] , "skinID" : 11 , "prog" : { "now" : "loginCount"	, "max" : 20 }		, "msg" : [ "Login for 20 days." , "" , "" ] } ,
+    { "pri" : 10 , "isUsed" : false , "isRelease" : false , "isSelect" : false , "value" : [ 9 ] , "skinID" : 12 , "prog" : { "now" : "loginCount"	, "max" : 30 }		, "msg" : [ "Login for 30 days." , "" , "" ] } ,
+    { "pri" : 2	 , "isUsed" : false , "isRelease" : false , "isSelect" : false , "value" : [ 3 ] , "skinID" : 3	 , "prog" : { "now" : "playCount"	, "max" : 10 }		, "msg" : [ "Play 10 times." , "" , "" ] } ,
+    { "pri" : 5	 , "isUsed" : false , "isRelease" : false , "isSelect" : false , "value" : [ 6 ] , "skinID" : 7	 , "prog" : { "now" : "playCount"	, "max" : 50 }		, "msg" : [ "Play 50 times." , "" , "" ] } ,
+    { "pri" : 3	 , "isUsed" : false , "isRelease" : false , "isSelect" : false , "value" : [ 3 ] , "skinID" : 4	 , "prog" : { "now" : "vanishCount" , "max" : 5000 }	, "msg" : [ "Kill a total of" , "5000 zombies." , "" ] } ,
+    { "pri" : 7	 , "isUsed" : false , "isRelease" : false , "isSelect" : false , "value" : [ 6 ] , "skinID" : 10 , "prog" : { "now" : "vanishCount" , "max" : 10000 }	, "msg" : [ "Kill a total of" , "10000 zombies." , "" ] } ,
+    { "pri" : 8	 , "isUsed" : false , "isRelease" : false , "isSelect" : false , "value" : [ 6 ] , "skinID" : 9	 , "prog" : { "now" : "aliveTime"	, "max" : 180 }		, "msg" : [ "Survive for" , "180 seconds." , "" ] } ,
+    { "pri" : 11 , "isUsed" : false , "isRelease" : false , "isSelect" : false , "value" : [ 9 ] , "skinID" : 2	 , "prog" : { "now" : "aliveTime"	, "max" : 300 }		, "msg" : [ "Survive for" , "300 seconds." , "" ] }
+    ]
+} }

@@ -1,0 +1,171 @@
+﻿{"frames": {
+
+"btn_back":
+{
+	"frame": {"x":1511,"y":328,"w":50,"h":49},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":50,"h":49},
+	"sourceSize": {"w":50,"h":49}
+},
+"btn_carselect":
+{
+	"frame": {"x":1511,"y":127,"w":171,"h":47},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":171,"h":47},
+	"sourceSize": {"w":171,"h":47}
+},
+"btn_gotcar_ok.png":
+{
+	"frame": {"x":1597,"y":229,"w":59,"h":55},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":59,"h":55},
+	"sourceSize": {"w":59,"h":55}
+},
+"btn_mission":
+{
+	"frame": {"x":1634,"y":4,"w":171,"h":47},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":171,"h":47},
+	"sourceSize": {"w":171,"h":47}
+},
+"btn_share":
+{
+	"frame": {"x":1432,"y":808,"w":171,"h":47},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":171,"h":47},
+	"sourceSize": {"w":171,"h":47}
+},
+"btn_short00":
+{
+	"frame": {"x":1634,"y":55,"w":171,"h":47},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":171,"h":47},
+	"sourceSize": {"w":171,"h":47}
+},
+"btn_short01":
+{
+	"frame": {"x":1511,"y":178,"w":171,"h":47},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":171,"h":47},
+	"sourceSize": {"w":171,"h":47}
+},
+"btn_use":
+{
+	"frame": {"x":1511,"y":229,"w":82,"h":56},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":82,"h":56},
+	"sourceSize": {"w":82,"h":56}
+},
+"carselect_choice":
+{
+	"frame": {"x":1511,"y":4,"w":119,"h":119},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":119,"h":119},
+	"sourceSize": {"w":119,"h":119}
+},
+"carselect_frame":
+{
+	"frame": {"x":1057,"y":1021,"w":131,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":131,"h":131},
+	"sourceSize": {"w":131,"h":131}
+},
+"carselect_secret":
+{
+	"frame": {"x":1565,"y":328,"w":29,"h":53},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":29,"h":53},
+	"sourceSize": {"w":29,"h":53}
+},
+"carselect_select":
+{
+	"frame": {"x":1192,"y":1021,"w":131,"h":131},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":131,"h":131},
+	"sourceSize": {"w":131,"h":131}
+},
+"carselect_textbox":
+{
+	"frame": {"x":1057,"y":888,"w":155,"h":129},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":155,"h":129},
+	"sourceSize": {"w":155,"h":129}
+},
+"carselect_time":
+{
+	"frame": {"x":1598,"y":328,"w":61,"h":21},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":61,"h":21},
+	"sourceSize": {"w":61,"h":21}
+},
+"carselect_title_line":
+{
+	"frame": {"x":1216,"y":888,"w":411,"h":39},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":411,"h":39},
+	"sourceSize": {"w":411,"h":39}
+},
+"gotcar_bg.png":
+{
+	"frame": {"x":1057,"y":4,"w":450,"h":800},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":450,"h":800},
+	"sourceSize": {"w":450,"h":800}
+},
+"gotcar_concentratedline.png":
+{
+	"frame": {"x":4,"y":4,"w":1049,"h":1049},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1049,"h":1049},
+	"sourceSize": {"w":1049,"h":1049}
+},
+"gotcar_gotthecar.png":
+{
+	"frame": {"x":1057,"y":808,"w":371,"h":76},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":371,"h":76},
+	"sourceSize": {"w":371,"h":76}
+},
+"gotcar_time.png":
+{
+	"frame": {"x":1511,"y":289,"w":105,"h":35},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":35},
+	"sourceSize": {"w":105,"h":35}
+},
+"pager_dot":
+{
+	"frame": {"x":1660,"y":229,"w":15,"h":15},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":15,"h":15},
+	"sourceSize": {"w":15,"h":15}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "21.0.2.37893",
+	"image": "skin.png",
+	"format": "RGBA8888",
+	"size": {"w":2048,"h":2048},
+	"scale": "1"
+}
+}

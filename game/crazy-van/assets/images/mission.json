@@ -1,0 +1,91 @@
+﻿{"frames": {
+
+"bt_mission":
+{
+	"frame": {"x":386,"y":4,"w":78,"h":89},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":78,"h":89},
+	"sourceSize": {"w":78,"h":89}
+},
+"bt_off":
+{
+	"frame": {"x":386,"y":97,"w":54,"h":33},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":54,"h":33},
+	"sourceSize": {"w":54,"h":33}
+},
+"bt_on":
+{
+	"frame": {"x":386,"y":134,"w":46,"h":33},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":46,"h":33},
+	"sourceSize": {"w":46,"h":33}
+},
+"et_blood":
+{
+	"frame": {"x":4,"y":283,"w":162,"h":86},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":162,"h":86},
+	"sourceSize": {"w":162,"h":86}
+},
+"et_underline":
+{
+	"frame": {"x":170,"y":283,"w":188,"h":11},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":188,"h":11},
+	"sourceSize": {"w":188,"h":11}
+},
+"et_underline2":
+{
+	"frame": {"x":4,"y":373,"w":364,"h":2},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":364,"h":2},
+	"sourceSize": {"w":364,"h":2}
+},
+"logo_daily":
+{
+	"frame": {"x":4,"y":188,"w":201,"h":91},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":201,"h":91},
+	"sourceSize": {"w":201,"h":91}
+},
+"logo_total":
+{
+	"frame": {"x":209,"y":188,"w":201,"h":91},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":201,"h":91},
+	"sourceSize": {"w":201,"h":91}
+},
+"titlelogo1":
+{
+	"frame": {"x":4,"y":4,"w":378,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":378,"h":88},
+	"sourceSize": {"w":378,"h":88}
+},
+"titlelogo2":
+{
+	"frame": {"x":4,"y":96,"w":378,"h":88},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":378,"h":88},
+	"sourceSize": {"w":378,"h":88}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "21.0.2.37893",
+	"image": "mission.png",
+	"format": "RGBA8888",
+	"size": {"w":512,"h":512},
+	"scale": "1"
+}
+}

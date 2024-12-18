@@ -1,0 +1,23 @@
+{
+	"languages": [ "ja", "en" ],
+	"modalTexts": {
+		"apiError": {
+			"en": {
+				"body": ["API", "error"],
+				"button": "YES"
+			}
+		},
+		"rewardAdApiError": {
+			"en": {
+				"body": ["reward API", "error"],
+				"button": "YES"
+			}
+		},
+		"buildError": {
+			"en": {
+				"body": ["build", "error"],
+				"button": "OK"
+			}
+		}
+	}
+}

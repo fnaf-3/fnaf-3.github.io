@@ -1,0 +1,51 @@
+﻿{"frames": {
+
+"popupback":
+{
+	"frame": {"x":4,"y":4,"w":401,"h":701},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":401,"h":701},
+	"sourceSize": {"w":401,"h":701}
+},
+"sh_buttonA":
+{
+	"frame": {"x":409,"y":4,"w":116,"h":97},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":116,"h":97},
+	"sourceSize": {"w":116,"h":97}
+},
+"sh_buttonB":
+{
+	"frame": {"x":409,"y":105,"w":102,"h":95},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":102,"h":95},
+	"sourceSize": {"w":102,"h":95}
+},
+"sh_detailA":
+{
+	"frame": {"x":4,"y":709,"w":305,"h":281},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":305,"h":281},
+	"sourceSize": {"w":305,"h":281}
+},
+"sh_detailB":
+{
+	"frame": {"x":313,"y":709,"w":305,"h":245},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":305,"h":245},
+	"sourceSize": {"w":305,"h":245}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "21.0.0.35450",
+	"image": "shortcut.png",
+	"format": "RGBA8888",
+	"size": {"w":1024,"h":1024},
+	"scale": "1"
+}
+}
