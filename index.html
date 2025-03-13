@@ -350,8 +350,40 @@
       </div>
       <div id="popup"></div>
     </div>
+    <div class="popup-notification" id="popupNotification">
+      <div class="popup-header">
+        <span class="popup-title">Important Announcement</span>
+        <button class="popup-close" onclick="closePopup()">×</button>
+      </div>
+      <div class="popup-content">
+        <p>
+          ❤️Dear Fnaf 3 players !!!<br><br>
+          We want to inform you that we will no longer be developing this website. ❌🌐
+          Instead, we are fully dedicating our time and efforts to building and improving our new platform: <span style="color: #4CAF50; font-weight: bold; text-decoration: underline; background-color: #f0f0f0; padding: 2px 5px; border-radius: 4px;">mathsframe.github.io</span> 🚀.
+          <br>
+          <br>
+          We truly appreciate your support ❤️ and hope you will join us on our new website for an even better experience! 🌟✨
+        </p>
+      </div>
+    </div>
   </body>
   <script src="./js/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      setTimeout(function() {
+        document.getElementById('popupNotification').classList.add('show');
+      }, 1000);
+    });
+  
+    function closePopup() {
+      const popup = document.getElementById('popupNotification');
+      popup.style.opacity = '0';
+      popup.style.transform = 'translateY(100px)';
+      setTimeout(() => {
+        popup.style.display = 'none';
+      }, 300);
+    }
+    </script>
   <style>
     .game-desc {
       max-width: 800px;
@@ -737,6 +769,102 @@
     .custom-play-more-btn {
       animation: customPulse 2s infinite;
     }
+    /* Thêm CSS cho popup */
+  .popup-notification {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(to right bottom, #ffffff, #f8f9fa);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    z-index: 1000;
+    width: 520px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: none;
+    color: #333;
+    border: 1px solid rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+  }
+
+  .popup-notification.show {
+    display: block;
+    animation: slideIn 0.5s ease-out;
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .popup-title {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .popup-title::before {
+    content: "🔔";
+    font-size: 1.2rem;
+  }
+
+  .popup-close {
+    background: #f8f9fa;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+
+  .popup-close:hover {
+    background: #e9ecef;
+    color: #333;
+    transform: rotate(90deg);
+  }
+
+  .popup-content {
+    padding: 5px 0;
+  }
+
+  .popup-content p {
+    color: #505965;
+    line-height: 1.5;
+    margin: 0;
+    font-size: 0.95rem;
+  }
+
+  @media (max-width: 768px) {
+    .popup-notification {
+      width: calc(100% - 40px);
+      bottom: 20px;
+      right: 20px;
+    }
+  }
   </style>
 
   <!-- Left sticky ad -->
