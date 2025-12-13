@@ -12,17 +12,6 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="shortcut icon" href="/img/nho.png" />
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8136533182122624"
-     crossorigin="anonymous"></script>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0LKC4XPH3R"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0LKC4XPH3R');
-</script>
   </head>
   <body>
     <div>
@@ -114,8 +103,8 @@
               <div class="platform-banner-content">
                 <h3>🎮 Play All FNAF Unblocked Games</h3>
                 <p>Visit our official FNAF platform to play all <strong>FNAF unblocked games</strong> including FNAF 1, 2, 3, 4, Ultimate Custom Night and more. No downloads, no blocks - play instantly!</p>
-                <a href="https://fnafofficial.com/fnaf-unblocked.html" target="_blank" rel="noopener noreferrer" class="official-platform-btn" title="Play FNAF Unblocked Games">
-                  Play FNAF Unblocked Games →
+                <a href="https://mathsframe.github.io" target="_blank" class="official-platform-btn" title="Play All 3000+ Games">
+                  Play All 3000+ Online Games →
                 </a>
               </div>
             </div>
@@ -151,7 +140,7 @@
 
               <!-- Thêm nút PLAY MORE GAMES ở đây -->
               <div class="play-more-container">
-                <a href="/playmoregames.html" class="custom-play-more-btn">
+                <a href="https://mathsframe.github.io" target="_blank" class="custom-play-more-btn"> 
                   <span class="custom-play-text">PLAY MORE GAMES</span>
                   <div class="custom-play-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
@@ -356,6 +345,28 @@
     </div>
   </body>
   <script src="./js/script.js"></script>
+  <!-- Font Awesome for TikTok icon in notification -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Game Notification Ticker (noti.js) - Only shows on homepage -->
+  <script src="./games-noti/noti.js"></script>
+  <!-- Chat Notification Popup (notification.js) -->
+  <script src="./Chat/notification.js"></script>
+  <!-- Prevent navigation to fnafofficial.com (keep links for SEO) -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Tìm tất cả các link đến fnafofficial.com
+      const fnafLinks = document.querySelectorAll('a[href*="fnafofficial.com"]');
+      
+      fnafLinks.forEach(function(link) {
+        // Ngăn chuyển hướng khi click, nhưng vẫn giữ href cho SEO
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          return false;
+        });
+      });
+    });
+  </script>
   <style>
     .game-desc {
       max-width: 800px;
@@ -620,43 +631,6 @@
       }
     }
 
-    /* Styles cho khung quảng cáo */
-    .ad-container {
-      position: relative;
-      text-align: center;
-      margin: 10px auto;
-    }
-
-    .ad-box {
-      background: #272525;
-      border: 0px dashed #999;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #454242;
-      font-size: 14px;
-    }
-
-    .ad-sticky {
-      position: fixed;
-      top: 100px;
-      z-index: 999;
-    }
-
-    .ad-left {
-      left: 10px;
-    }
-
-    .ad-right {
-      right: 10px;
-    }
-
-    @media (max-width: 1600px) {
-      .ad-sticky {
-        display: none;
-      }
-    }
-
     /* Custom styles for PLAY MORE GAMES button */
     .play-more-container {
       text-align: center;
@@ -801,25 +775,64 @@
 
     .official-platform-btn {
       display: inline-block;
-      padding: 15px 40px;
-      background: #1a1a1a;
+      padding: 22px 70px;
+      background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 50%, #ff8e53 100%);
       color: #ffffff;
-      font-size: 1.1em;
-      font-weight: bold;
+      font-size: 1.6em;
+      font-weight: 900;
       border-radius: 50px;
       text-decoration: none;
       transition: all 0.3s ease;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+      box-shadow: 0 8px 30px rgba(255, 107, 107, 0.5),
+                  0 0 20px rgba(255, 107, 107, 0.3),
+                  inset 0 0 20px rgba(255, 255, 255, 0.1);
       margin-top: 10px;
-      border: 2px solid #ffffff;
+      border: 3px solid #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      position: relative;
+      overflow: hidden;
+      animation: pulse-glow 2s ease-in-out infinite;
+    }
+
+    .official-platform-btn::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
+      transform: rotate(45deg);
+      transition: all 0.5s;
+    }
+
+    .official-platform-btn:hover::before {
+      left: 100%;
     }
 
     .official-platform-btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 25px rgba(0,0,0,0.6);
-      background: #2d2d2d;
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 12px 40px rgba(255, 107, 107, 0.7),
+                  0 0 30px rgba(255, 107, 107, 0.5),
+                  inset 0 0 25px rgba(255, 255, 255, 0.2);
+      background: linear-gradient(135deg, #ff8e53 0%, #ff6b6b 50%, #ee5a6f 100%);
       color: #ffffff;
-      border-color: #ff6b6b;
+      border-color: #ffd700;
+      border-width: 4px;
+    }
+
+    @keyframes pulse-glow {
+      0%, 100% {
+        box-shadow: 0 8px 30px rgba(255, 107, 107, 0.5),
+                    0 0 20px rgba(255, 107, 107, 0.3),
+                    inset 0 0 20px rgba(255, 255, 255, 0.1);
+      }
+      50% {
+        box-shadow: 0 8px 40px rgba(255, 107, 107, 0.7),
+                    0 0 30px rgba(255, 107, 107, 0.5),
+                    inset 0 0 25px rgba(255, 255, 255, 0.15);
+      }
     }
 
     .game-desc a {
@@ -851,8 +864,8 @@
       }
 
       .official-platform-btn {
-        padding: 12px 30px;
-        font-size: 1em;
+        padding: 18px 50px;
+        font-size: 1.3em;
       }
     }
   </style>
