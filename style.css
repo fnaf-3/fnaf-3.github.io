@@ -438,25 +438,6 @@ nav ul li a:hover {
   display: block;
 }
 
-#toTop {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  border-radius: 7px;
-  transition: opacity 0.2s ease-out;
-  opacity: 0;
-  cursor: pointer;
-  height: 50px;
-  width: 50px;
-  visibility: hidden;
-  background: #131422;
-  border-radius: 50%;
-}
-
-#toTop.show {
-  opacity: 1;
-  visibility: visible;
-}
 
 .privacy-desc {
   color: #fff;
@@ -1661,9 +1642,6 @@ div#gameLoad.fullscreen {
     padding: 30px;
   }
 
-  #toTop {
-    bottom: 30px;
-  }
 
   nav {
     padding: 0 20px;
@@ -1738,10 +1716,6 @@ div#gameLoad.fullscreen {
     left: 0;
   }
 
-  #toTop {
-    bottom: 15px;
-    right: 15px;
-  }
 }
 
 @media (min-width: 1024px) and (max-width: 1180px) {
