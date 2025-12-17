@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /game/
+Allow: /images/
+Allow: /img/
+
+# Disallow test folder
+Disallow: /test/
+
+# Disallow admin/internal files
+Disallow: /Chat/
+Disallow: /.git/
+
+# Sitemap
+Sitemap: https://fnaf-3.github.io/sitemap.xml
+
